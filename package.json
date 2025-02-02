@@ -19,7 +19,7 @@
       "scripts": {
          "start": "ts-node src/index.ts",
          "typeorm": "typeorm-ts-node-commonjs",
-   "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
+         "migration:run": "typeorm-ts-node-commonjs -d src/data-source.ts migration:run",
          "lint": "eslint --ext .ts src",
          "lint:fix": "eslint --ext .ts src --fix",
          "prettier:check": "prettier --check src/**/*.ts",

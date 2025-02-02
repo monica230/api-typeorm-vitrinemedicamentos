@@ -17,7 +17,7 @@ export class CreateTableMedicamentos1738461913896
                     },
                     {
                         name: 'name',
-                        type: 'int',
+                        type: 'varchar',
                         length: '255',
                         isNullable: false,
                     },
