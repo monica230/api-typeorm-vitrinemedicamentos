@@ -1,35 +1,28 @@
 {
-    "name": "api-typeorm-vitrine-medicamentos",
-    "version": "0.0.1",
-    "description": "Awesome project developed with TypeORM.",
-    "type": "commonjs",
-    "devDependencies": {
-        "@types/bcrypt": "^5.0.2",
-        "@types/express": "^5.0.0",
-        "@types/jsonwebtoken": "^9.0.8",
-        "@types/node": "^16.11.10",
-        "prettier": "3.4.2",
-        "ts-node": "^10.9.1",
-        "ts-node-dev": "^2.0.0",
-        "typescript": "4.5.2"
-    },
-    "dependencies": {
-        "bcrypt": "^5.1.1",
-        "express": "^4.21.2",
-        "jsonwebtoken": "^9.0.2",
-        "pg": "^8.4.0",
-        "reflect-metadata": "^0.1.13",
-        "typeorm": "0.3.20"
-    },
-    "scripts": {
-        "start": "ts-node src/server.ts",
-        "dev": "ts-node-dev --respawn src/server.ts",
-        "dev:server": "ts-node-dev src/server.ts",
-        "typeorm": "typeorm-ts-node-commonjs",
-        "migration:run": "typeorm-ts-node-commonjs -d ./src/database/data-source.ts migration:run",
-        "lint": "eslint --ext .ts src",
-        "lint:fix": "eslint --ext .ts src --fix",
-        "prettier:check": "prettier --check src/**/*.ts",
-        "format": "npx prettier --write ."
-    }
+   "name": "api-typeorm-vitrinemedicamentos",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "type": "commonjs",
+   "devDependencies": {
+   "@types/express": "^5.0.0",
+         "@types/node": "^16.11.10",
+         "prettier": "^3.4.2",
+         "ts-node": "10.9.1",
+         "typescript": "4.5.2"
+      },
+      "dependencies": {
+         "express": "^4.21.2",
+         "pg": "^8.4.0",
+         "reflect-metadata": "^0.1.  13",
+   "typeorm": "0.3.20"
+      },
+      "scripts": {
+         "start": "ts-node src/index.ts",
+         "typeorm": "typeorm-ts-node-commonjs",
+   "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
+         "lint": "eslint --ext .ts src",
+         "lint:fix": "eslint --ext .ts src --fix",
+         "prettier:check": "prettier --check src/**/*.ts",
+         "format": " npx prettier --write."
+      }
 }
